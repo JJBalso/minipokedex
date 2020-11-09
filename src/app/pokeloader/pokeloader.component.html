@@ -1,0 +1,12 @@
+<div *ngIf="!loading" class="pokeloader-wrapper">
+  <form class="pokeloader-header">
+    <mat-form-field class="pokeloader-full-width">
+      <input matInput placeholder="{{'Search by Name' | translate:lang}}" [ngModel]="textInput" [ngModelOptions]="{standalone: true}" (ngModelChange)="filterPokemons($event)">
+      <!-- <button mat-button color="primary" (click)="filterPokemons(textInput)">{{'test' | translate:lang}}</button> -->
+    </mat-form-field> 
+  </form>
+  <div class="pokeloader-body">
+    <app-minipokedex [pokemonList]="pokemonList"></app-minipokedex>
+  </div>
+</div>
+<div *ngIf="loading" l10nTranslate>Loading</div>

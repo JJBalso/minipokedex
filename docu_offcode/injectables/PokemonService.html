@@ -1,0 +1,856 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>pokemon-web-ui documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">pokemon-web-ui documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>PokemonService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/services/pokemon.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Pokemon Services</p>
+
+            </p>
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getEvolutionsFromChain">getEvolutionsFromChain</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getPokemonDetails">getPokemonDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getPokemonInfoFromSpecie">getPokemonInfoFromSpecie</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getPokemons">getPokemons</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getPokemonSpecie">getPokemonSpecie</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#processChain">processChain</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+            <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getEvolutionsFromChain"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getEvolutionsFromChain
+                        </b>
+                        <a href="#getEvolutionsFromChain"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getEvolutionsFromChain(pokemonEvolutionChain: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/services/pokemon.service.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the Pokemon Names of the Evolution Chain</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pokemonEvolutionChain</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;string[]&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPokemonDetails"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getPokemonDetails
+                        </b>
+                        <a href="#getPokemonDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPokemonDetails(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/app/services/pokemon.service.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the Pokemon Details from the Pokemon&#39;s name</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;PokemonDetails&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPokemonInfoFromSpecie"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getPokemonInfoFromSpecie
+                        </b>
+                        <a href="#getPokemonInfoFromSpecie"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPokemonInfoFromSpecie(pokemonSpecie: <a href="../classes/PokemonSpecie.html">PokemonSpecie</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/services/pokemon.service.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the Pokemon Details of the target pokemon and its previous Evolution </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pokemonSpecie</td>
+                                    <td>
+                                                <code><a href="../classes/PokemonSpecie.html" target="_self" >PokemonSpecie</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;PokemonInfo&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPokemons"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getPokemons
+                        </b>
+                        <a href="#getPokemons"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPokemons(pokeLimit: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pokeOffset?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="27"
+                            class="link-to-prism">src/app/services/pokemon.service.ts:27</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the List of Pokemons  </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pokeLimit</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pokeOffset</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Pokemon.html" target="_self" >Observable&lt;Pokemon[]&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getPokemonSpecie"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Public</span>
+                            getPokemonSpecie
+                        </b>
+                        <a href="#getPokemonSpecie"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getPokemonSpecie(name: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/services/pokemon.service.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Gets the Evolution Chain and the Pokemon Name from which the target Pokemon evolves </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Observable&lt;PokemonSpecie&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processChain"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Private</span>
+                            processChain
+                        </b>
+                        <a href="#processChain"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>processChain(nameList: string[], chain: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/app/services/pokemon.service.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>Recursive method (Auxiliary) that updates the Array of strings eneterd to explore the Evolution Chain </p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>nameList</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>chain</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { forkJoin, Observable } from &#x27;rxjs&#x27;
+import { map } from &quot;rxjs/operators&quot;;
+import { HttpClient, HttpParams } from &#x27;@angular/common/http&#x27;;
+import { Pokemon, PokemonDetails, PokemonSpecie, PokemonInfo } from &#x27;../models/pokemons.model&#x27;;
+import { pokeAPI } from &#x27;../lib/api-url&#x27;
+
+/**
+ * Pokemon Services
+ */
+@Injectable()
+export class PokemonService {
+
+  /**
+   * 
+   * @ignore
+   */
+  constructor(private _http: HttpClient) { }
+
+  /**
+   * 
+   * Gets the List of Pokemons  
+   * 
+   * @param {number} pokeLimit 
+   * @param {number} pokeOffset 
+   */
+  public getPokemons(pokeLimit: number, pokeOffset? : number): Observable&lt;Pokemon[]&gt; {
+    
+    let offset &#x3D; pokeOffset ? pokeOffset : 0;
+
+    let petition &#x3D; pokeAPI.baseUrl + &#x27;pokemon/&#x27;;    
+
+    var params &#x3D; new HttpParams()
+      .set(&#x27;limit&#x27;, pokeLimit.toString())
+      .set(&#x27;offset&#x27;, offset.toString());
+
+    return this._http.get&lt;any&gt;(petition, {params} )
+    .pipe(map(res &#x3D;&gt; {
+
+      let pokemonArray &#x3D; new Array&lt;Pokemon&gt;();
+
+      if(res[&#x27;results&#x27;] &amp;&amp; res[&#x27;results&#x27;].length &gt; 0){
+
+        res[&#x27;results&#x27;].forEach((pokemon: Pokemon) &#x3D;&gt; {
+          pokemonArray.push(new Pokemon(pokemon.name, pokemon.url))
+        });
+      }
+     
+      return pokemonArray;
+    }));
+  } 
+
+
+  /**
+   * Gets the Pokemon Details from the Pokemon&#x27;s name
+   * 
+   * @param {string} name 
+   */
+  public getPokemonDetails(name: string): Observable&lt;PokemonDetails&gt;{
+
+    let petition &#x3D; pokeAPI.baseUrl + &#x27;pokemon/&#x27; + name;
+
+    return this._http.get&lt;any&gt;(petition)
+    .pipe(map(res &#x3D;&gt; {
+
+      //Get Types
+      let pokemonTypes: string[] &#x3D; [];
+      
+      if(res[&#x27;types&#x27;] &amp;&amp; res[&#x27;types&#x27;].length &gt; 0){
+        res[&#x27;types&#x27;].forEach((pokemonType: any) &#x3D;&gt; {          
+          pokemonType[&quot;type&quot;] &amp;&amp; pokemonType[&quot;type&quot;][&quot;name&quot;] &amp;&amp; pokemonTypes.push(pokemonType[&quot;type&quot;][&quot;name&quot;])          
+        });
+      }      
+
+      //Process Abilities
+      let pokemonAbilities: string[] &#x3D; [];
+      if(res[&#x27;abilities&#x27;] &amp;&amp; res[&#x27;abilities&#x27;].length &gt; 0){
+        res[&#x27;abilities&#x27;].forEach((pokemonAbility: any) &#x3D;&gt; {          
+          pokemonAbility[&quot;ability&quot;] &amp;&amp; pokemonAbility[&quot;ability&quot;][&quot;name&quot;] &amp;&amp; pokemonAbilities.push(pokemonAbility[&quot;ability&quot;][&quot;name&quot;])          
+        });
+      }
+
+      //Get Sprites &amp; Main Sprite
+      let pokemonSprites: string[] &#x3D; [];
+      let pokemonMainSprite: string &#x3D; &#x27;&#x27;;
+      let sprites &#x3D; res[&#x27;sprites&#x27;];
+      if(sprites){        
+        Object.keys(sprites).forEach( key &#x3D;&gt;{          
+          if(key !&#x3D; &#x27;other&#x27; &amp;&amp; key !&#x3D; &#x27;versions&#x27;){    
+            if(sprites[key] !&#x3D; null &amp;&amp; sprites[key] !&#x3D; undefined){      
+              pokemonSprites.push(sprites[key])
+            }
+          }
+        }) 
+
+        if(sprites[&#x27;other&#x27;] &amp;&amp; sprites[&#x27;other&#x27;][&#x27;dream_world&#x27;]){          
+          pokemonMainSprite &#x3D; sprites[&#x27;other&#x27;][&#x27;dream_world&#x27;][&#x27;front_default&#x27;]
+
+        } else{
+          pokemonMainSprite &#x3D; sprites[&#x27;front_default&#x27;]
+        }
+        
+      }
+
+      return new PokemonDetails(
+        res[&#x27;name&#x27;], res[&#x27;id&#x27;], res[&#x27;order&#x27;], res[&#x27;height&#x27;], res[&#x27;weight&#x27;], pokemonAbilities, pokemonTypes, pokemonSprites, pokemonMainSprite
+      );
+
+    }));
+
+  }
+
+  /**
+   * Gets the Evolution Chain and the Pokemon Name from which the target Pokemon evolves 
+   * 
+   * @param {string} name 
+   * 
+   */
+  public getPokemonSpecie(name: string): Observable&lt;PokemonSpecie&gt;{
+
+    let petitionSpecies &#x3D; pokeAPI.baseUrl + &#x27;pokemon-species/&#x27; + name;
+
+    return this._http.get&lt;any&gt;(petitionSpecies)
+    .pipe(map(res &#x3D;&gt; {
+
+      let pokemonSpecie &#x3D; new PokemonSpecie;
+
+      pokemonSpecie.name &#x3D; name;
+      if (res[&#x27;evolves_from_species&#x27;]) pokemonSpecie.evolvesFromName &#x3D; res[&#x27;evolves_from_species&#x27;][&#x27;name&#x27;];   
+      if (res[&#x27;evolution_chain&#x27;]) pokemonSpecie.evolutionChainUrl &#x3D; res[&#x27;evolution_chain&#x27;][&#x27;url&#x27;];
+
+      return pokemonSpecie
+
+    }));
+  }
+
+
+  /**
+   * 
+   * Gets the Pokemon Details of the target pokemon and its previous Evolution 
+   * 
+   * @param {PokemonSpecie} pokemonSpecie 
+   */
+  public getPokemonInfoFromSpecie(pokemonSpecie: PokemonSpecie): Observable&lt;PokemonInfo&gt;{
+    return forkJoin(
+          this.getPokemonDetails(pokemonSpecie.name),
+          this.getPokemonDetails(pokemonSpecie.evolvesFromName)
+    ).pipe(map(([mainPokemon, evolveFromPokemon]) &#x3D;&gt; {
+        return new PokemonInfo(pokemonSpecie.name, mainPokemon, evolveFromPokemon, pokemonSpecie.evolutionChainUrl); 
+    }));
+  }
+
+  /**
+   * Gets the Pokemon Names of the Evolution Chain
+   * 
+   * @param {string} pokemonEvolutionChain 
+   */
+  public getEvolutionsFromChain(pokemonEvolutionChain: string): Observable&lt;string[]&gt;{
+    return this._http.get&lt;any&gt;(pokemonEvolutionChain)
+    .pipe(map(res &#x3D;&gt; {
+
+      var pokemonEvolutionNames: string[] &#x3D; []      
+      var chain &#x3D; res[&#x27;chain&#x27;];
+     
+      this.processChain(pokemonEvolutionNames, chain);
+      return pokemonEvolutionNames;
+
+    }));
+  }
+
+  /**
+   * 
+   * Recursive method (Auxiliary) that updates the Array of strings eneterd to explore the Evolution Chain 
+   * 
+   * @param {string[]} nameList 
+   * @param chain 
+   */
+  private processChain(nameList: string[], chain: any){
+
+    var name &#x3D; chain[&#x27;species&#x27;][&#x27;name&#x27;];
+    nameList.push(name);
+
+    if(chain[&#x27;evolves_to&#x27;]){
+      for(let j &#x3D; 0; j &lt; chain[&#x27;evolves_to&#x27;].length; j++){
+        this.processChain(nameList, chain[&#x27;evolves_to&#x27;][j])
+      }  
+    }
+  }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'PokemonService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "extends": ["tslint:recommended", "angular-tslint-rules", "tslint-sonarts"],
+  "rules": {
+    "directive-selector": [
+      true,
+      "attribute",
+      "app",
+      "camelCase"
+    ],
+    "component-selector": [
+      true,
+      "element",
+      "app",
+      "kebab-case"
+    ],
+    "comment-type": [true, "multiline", "singleline", "doc"],
+    "typedef": [true, "parameter", "member-variable-declaration", "arrow-parameter", "property-declaration", "variable-declaration"],
+    "no-import-side-effect": [false, {
+      "ignore-module": "(\\rxjs)$"
+    }],
+    "no-var-requires": false,
+    "no-require-imports": false,
+    "no-inferrable-types": false,
+    "no-redundant-jsdoc": false,
+    "only-arrow-functions": false
+  }
+}

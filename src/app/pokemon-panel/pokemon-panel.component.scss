@@ -1,0 +1,112 @@
+// Main Card
+.pokemon-main-card{
+    margin: 10px;
+}
+
+.pokemon-main-card-image-wrapper{
+    height: 200px;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #3f51b5;
+    border-radius: 20px;
+}
+
+.pokemon-main-card-content{
+    display: inline-block;
+}
+
+.pokemon-main-card-item{
+    padding: 10px 20px;
+}
+
+.item-header{
+    font-size: 16px;
+}
+
+.item-header::after{
+    content: " - ";
+}
+
+.item-value{
+    font-weight: bold;
+}
+
+.sprites-header{
+    font-size: 16px;
+}
+
+.pokemon-main-image{
+    height: 100%;
+    margin: unset!important;
+    width: 100%;
+}
+
+
+
+// Evolution Card
+.pokemon-evolution-header{
+    padding: 10px 20px;
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+}
+
+.pokemon-evolution-wrapper{
+    height: 100%;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-gap: 20px;
+    padding: 0px 20px;
+}
+
+.pokemon-evolution-card{
+    cursor: pointer;
+    margin: 1px;
+}
+
+.pokemon-evolution-card:hover{
+    box-shadow: 0px 1px 3px 0px;
+}
+
+.pokemon-evolution-card-image-wrapper{
+    height: 150px;
+    padding: 10px;
+}
+
+.pokemon-evolution-card-content{
+    text-align: end;
+}
+
+// Common Styles
+
+.pokemon-card-header{
+    text-transform: capitalize;
+}
+
+.pokemon-image{
+    height: 100%;
+}
+
+.pokemon-type{
+    text-transform: capitalize;
+    padding: 4px;
+    margin: 0px 2px;
+    border: 1px solid #3f51b5;
+    border-radius: 8px;
+    line-height: 25px;
+}
+
+.pokemon-ability{
+    text-transform: capitalize;
+    padding: 4px;
+    margin: 0px 2px;
+    border: 1px solid #3f51b5;
+    border-radius: 8px;
+    line-height: 25px;
+}
+
+.pokemon-sprite{
+    display: inline-block;
+    height: 100px;    
+    width: 100px;
+}

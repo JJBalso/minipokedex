@@ -1,0 +1,3 @@
+Language:        TypeScript
+BasedOnStyle:    Google
+ColumnLimit:     80

@@ -1,0 +1,63 @@
+<div *ngIf="!loading">  
+  <mat-card class="pokemon-main-card">
+    <mat-card-header class="pokemon-card-header">
+      <mat-card-title>{{pokemonDetails.name}}</mat-card-title>
+    </mat-card-header>
+    <div class="pokemon-main-card-image-wrapper">
+      <img class="pokemon-main-image" mat-card-image src="{{pokemonDetails.mainSprite}}" alt="{{pokemonDetails.name}}">    
+    </div>      
+    <mat-card-content class="pokemon-main-card-content">
+      
+      <div class="pokemon-main-card-item">
+        <span class="item-header" l10nTranslate>Order</span>
+        <span class="item-value">{{pokemonDetails.order}}</span>
+      </div>
+      <div class="pokemon-main-card-item">
+        <span class="item-header" l10nTranslate>Height</span>
+        <span class="item-value">{{pokemonDetails.height}}</span>
+      </div>
+      <div class="pokemon-main-card-item">
+        <span class="item-header" l10nTranslate>Weight</span>
+        <span class="item-value">{{pokemonDetails.weight}}</span>
+      </div>
+      <div class="pokemon-main-card-item">        
+        <span class="item-header" l10nTranslate>Types</span>
+        <span class="pokemon-type" *ngFor="let type of pokemonDetails.types">
+          {{type}}
+        </span>
+      </div>
+      <div class="pokemon-main-card-item">        
+        <span class="item-header" l10nTranslate>Abilities</span>
+        <span class="pokemon-ability" *ngFor="let ability of pokemonDetails.abilities">
+          {{ability}}
+        </span>
+      </div>
+      <div class="pokemon-main-card-item">        
+        <div class="sprites-header" l10nTranslate>Sprites</div>
+        <div class="pokemon-sprite" *ngFor="let sprite of pokemonDetails.sprites">
+          <img class="pokemon-image" src="{{sprite}}">
+        </div>
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+  <div class="pokemon-evolution-header" l10nTranslate>Evolution Chain</div>
+  <div class="pokemon-evolution-wrapper">
+    <div  *ngFor="let pokemonEvolution of pokemonEvolutions">
+      <mat-card class="pokemon-evolution-card" (click)="onPokemonEvolutionClicked(pokemonEvolution.name)">
+        <mat-card-header class="pokemon-card-header">
+          <mat-card-title>{{pokemonEvolution.name}}</mat-card-title>
+        </mat-card-header>
+        <div class="pokemon-evolution-card-image-wrapper">
+          <img class="pokemon-image" mat-card-image src="{{pokemonEvolution.mainSprite}}" alt="{{pokemonEvolution.name}}">    
+        </div>      
+        <mat-card-content class="pokemon-evolution-card-content">
+          <span class="pokemon-type" *ngFor="let type of pokemonEvolution.types">
+            {{type}}
+          </span>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
+<div *ngIf="loading" l10nTranslate>Loading</div>

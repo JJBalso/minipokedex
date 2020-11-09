@@ -1,0 +1,21 @@
+<div *ngIf="pokemonList.length > 0; else noItems" class="minipokedex-wrapper">
+  <div  *ngFor="let pokemon of pokemonList">
+    <mat-card class="pokemon-card" (click)="onPokemonClicked(pokemon.name)">
+      <mat-card-header class="pokemon-card-header">
+        <mat-card-title>{{pokemon.name}}</mat-card-title>
+      </mat-card-header>
+      <div class="pokemon-card-image-wrapper">
+        <img class="pokemon-card-image-main" mat-card-image src="{{pokemon.details.mainSprite}}" alt="{{pokemon.name}}">    
+        <img *ngIf="pokemon.evolvesFromPokemonDetails && pokemon.evolvesFromPokemonDetails.name" class="pokemon-card-image-secondary" mat-card-image src="{{pokemon.evolvesFromPokemonDetails.mainSprite}}" alt="{{pokemon.evolvesFromPokemonDetails.name}}">    
+      </div>      
+      <mat-card-content class="pokemon-card-content">
+        <span class="pokemon-type" *ngFor="let type of pokemon.details.types">
+          {{type}}
+        </span>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<ng-template #noItems>
+  <div id="no-pokemons-message" l10nTranslate>Pokemons Not Found</div>
+</ng-template>

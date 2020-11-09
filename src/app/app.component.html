@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a [routerLink]="['/main']" class="router-link">{{ title }}</a>   
+    <span class="toolbar-spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon aria-label="Language">language</mat-icon>
+    </button>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item (click)="selectLocale('es')" l10nTranslate>Spanish</button>
+  <button mat-menu-item (click)="selectLocale('en')" l10nTranslate>English</button>
+</mat-menu>
+
+<div [@routeAnimations]="prepareRoute(outlet)" id="app-wrapper">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>
+
+<div id="footer"><span l10nTranslate>Created By</span> Juanjo Balcázar</div>
